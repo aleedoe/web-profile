@@ -36,7 +36,7 @@ const cardContent: cardContentType[] = [
 
 const About = () => {
     return (
-        <div className='flex justify-center items-center lg:flex-row md:flex-wrap md:flex-row flex-col gap-4 py-5'>
+        <section className='flex justify-center items-center lg:flex-row md:flex-wrap md:flex-row flex-col gap-4 mb-16'>
             {cardContent.map((card, index) => (
                 <motion.div
                     key={index}
@@ -58,7 +58,7 @@ const About = () => {
                     </Card>
                 </motion.div>
             ))}
-        </div>
+        </section>
     );
 };
 
