@@ -5,7 +5,7 @@ import HamburgerHeader from "./HamburgerHeader";
 const Header = () => {
 
     return (
-        <nav className="backdrop-blur-sm fixed w-full h-16 bg-white/75 z-50">
+        <nav className="backdrop-blur-sm fixed w-full h-16 bg-white/75 z-50 border-b-2 border-slate-100">
             <div className="lg:flex md:flex hidden h-full gap-8 justify-center items-center">
                 <Link rel="stylesheet" href="" >About</Link>
                 <Link rel="stylesheet" href="" >Skills</Link>
