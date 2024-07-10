@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FaRegPaperPlane } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Hero = () => {
     return (
@@ -20,7 +21,7 @@ const Hero = () => {
                         Hi! I&apos;m Alie, a Fullstack Web Developer in Indonesia.
                     </p>
                     <Button variant={"outline"} className="mt-4 hover:bg-cyan-50/50 hover:scale-[1.1] transition-all duration-200">
-                        Vist My Portfolio {" "} <FaRegPaperPlane className="ml-2" />
+                        Vist My Portfolio <FaArrowRightLong className="ml-2" />
                     </Button>
                 </div>
             </div>
