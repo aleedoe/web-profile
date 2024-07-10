@@ -57,7 +57,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ title, projects }) => {
                         key={index}
                     >
                         <motion.div variants={cardVariants} custom={index}>
-                            <Card className="w-[320px]">
+                            <Card className="w-[320px] hover:drop-shadow-xl hover:scale-105 transition-all duration-300">
                                 <Image className='h-48 object-cover rounded-t-lg' alt='' src={project.img} width={350} height={0} />
                                 <CardHeader>
                                     <CardTitle className='text-xl custom-card-title'>{project.title}</CardTitle>
@@ -81,7 +81,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ title, projects }) => {
                                             </div>
                                         ))}
                                     </div>
-                                    <Button variant={"outline"}>Live Demo <FaRegPaperPlane className='ml-2' /></Button>
+                                    <Button variant={"outline"} className='hover:bg-cyan-50/50'>Live Demo <FaRegPaperPlane className='ml-2' /></Button>
                                 </CardFooter>
                             </Card>
                         </motion.div>

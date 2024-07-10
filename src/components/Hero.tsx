@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { FaRegPaperPlane } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Hero = () => {
