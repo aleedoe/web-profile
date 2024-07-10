@@ -8,8 +8,6 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/c
 
 import { motion, Variants } from "framer-motion";
 import { HiDotsHorizontal } from "react-icons/hi";
-import { CiLocationArrow1 } from "react-icons/ci";
-import { FaLocationArrow } from "react-icons/fa";
 import { FaRegPaperPlane } from "react-icons/fa";
 
 import { websiteProfile } from './ProjectContents';
