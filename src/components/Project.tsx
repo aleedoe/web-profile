@@ -9,6 +9,7 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/c
 import { motion, Variants } from "framer-motion";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { FaRegPaperPlane } from "react-icons/fa";
+import { GoArrowUpRight } from "react-icons/go";
 
 import { websiteProfile } from './ProjectContents';
 
@@ -81,7 +82,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ title, projects }) => {
                                             </div>
                                         ))}
                                     </div>
-                                    <Button variant={"outline"} className='hover:bg-cyan-50/50'>Live Demo <FaRegPaperPlane className='ml-2' /></Button>
+                                    <Button variant={"outline"} className='hover:bg-cyan-50/50'>Live Demo <GoArrowUpRight className='ml-1' size={15} /></Button>
                                 </CardFooter>
                             </Card>
                         </motion.div>
