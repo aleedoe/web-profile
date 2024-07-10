@@ -48,7 +48,7 @@ const About = () => {
                     }}
                 >
                     <Card className="w-[310px] md:w-[340px] lg:w-[350px]">
-                        <div className='p-4 flex flex-col md:flex-row lg:flex-row items-center justify-center'>
+                        <div className='p-4 flex flex-col md:flex-row lg:flex-row items-center justify-center hover:scale-95 transition-all duration-300'>
                             {card.icon}
                             <div className='flex flex-col gap-1 text-center md:text-start lg:text-start'>
                                 <CardTitle className='text-lg md:text-xl lg:text-2xl'>{card.title}</CardTitle>
