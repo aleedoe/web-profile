@@ -8,7 +8,6 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/c
 
 import { motion, Variants } from "framer-motion";
 import { HiDotsHorizontal } from "react-icons/hi";
-import { FaRegPaperPlane } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 
 import { websiteProfile } from './ProjectContents';
@@ -96,7 +95,9 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ title, projects }) => {
 const Project = () => {
     return (
         <section className='py-28'>
-            <h1 className='text-center text-4xl mb-10 font-bold capitalize'>Project that have <span className='text-cyan-500'>been made</span></h1>
+            <h1 className='text-center text-4xl mb-10 font-bold capitalize'>
+                Some Project that have <span className='text-cyan-500'>been made</span>
+            </h1>
             <div className='flex flex-col gap-10'>
                 <ProjectSection title="Website Profiles" projects={websiteProfile} />
                 <ProjectSection title="Website Blogs" projects={websiteProfile} />
