@@ -8,6 +8,9 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/c
 
 import { motion, Variants } from "framer-motion";
 import { HiDotsHorizontal } from "react-icons/hi";
+import { CiLocationArrow1 } from "react-icons/ci";
+import { FaLocationArrow } from "react-icons/fa";
+import { FaRegPaperPlane } from "react-icons/fa";
 
 import { websiteProfile } from './ProjectContents';
 
@@ -80,7 +83,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ title, projects }) => {
                                             </div>
                                         ))}
                                     </div>
-                                    <Button variant={"outline"}>Live Demo</Button>
+                                    <Button variant={"outline"}>Live Demo <FaRegPaperPlane className='ml-2' /></Button>
                                 </CardFooter>
                             </Card>
                         </motion.div>
@@ -95,7 +98,7 @@ const Project = () => {
     return (
         <section className='py-28'>
             <h1 className='text-center text-4xl mb-10 font-bold capitalize'>Project that have <span className='text-cyan-500'>been made</span></h1>
-            <div className='flex flex-col'>
+            <div className='flex flex-col gap-10'>
                 <ProjectSection title="Website Profiles" projects={websiteProfile} />
                 <ProjectSection title="Website Blogs" projects={websiteProfile} />
                 <ProjectSection title="Website Commercial" projects={websiteProfile} />
