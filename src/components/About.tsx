@@ -47,7 +47,7 @@ const About = () => {
                         // ease: [0, 0.71, 0.2, 1.01]
                     }}
                 >
-                    <Card className="w-[310px] md:w-[330px] lg:w-[350px]">
+                    <Card className="w-[310px] md:w-[340px] lg:w-[350px]">
                         <div className='p-4 flex flex-col md:flex-row lg:flex-row items-center justify-center'>
                             {card.icon}
                             <div className='flex flex-col gap-1 text-center md:text-start lg:text-start'>
