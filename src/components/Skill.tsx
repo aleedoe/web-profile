@@ -3,28 +3,20 @@ import { Card, CardHeader, CardTitle } from './ui/card'
 
 import Image from 'next/image';
 
-
-interface SkillCardProps {
-    imageSrc: string;
-    title: string;
-}
-
 const skills = [
     { title: 'Python', imageSrc: 'icons8-python.svg' },
     { title: 'HTML', imageSrc: 'icons8-html.svg' },
+    { title: 'CSS', imageSrc: 'icons8-css.svg' },
     { title: 'JavaScript', imageSrc: 'icons8-javascript.svg' },
+    { title: 'PHP', imageSrc: 'icons8-php.svg' },
+    { title: 'MySQL', imageSrc: 'icons8-mysql.svg' },
+    { title: 'React', imageSrc: 'icons8-react.svg' },
+    { title: 'Laravel', imageSrc: 'icons8-laravel.svg' },
+    { title: 'Tailwind', imageSrc: 'icons8-tailwind-css.svg' },
+    { title: 'Django', imageSrc: 'icons8-django.svg' },
+    { title: 'Flask', imageSrc: 'icons8-flask.svg' },
+    { title: 'Next', imageSrc: 'icons8-nextjs.svg' },
 ]
-
-const SkillCard: React.FC<SkillCardProps> = ({ imageSrc, title }) => {
-    return (
-        <Card className="w-auto">
-            <CardHeader className='flex flex-col items-center'>
-                <Image alt={title} src={imageSrc} width={60} height={60} />
-                <CardTitle className='text-lg text-center'>{title}</CardTitle>
-            </CardHeader>
-        </Card>
-    )
-}
 
 const Skill = () => {
     return (
@@ -32,7 +24,12 @@ const Skill = () => {
             <h1 className='text-center text-4xl mb-10 font-bold capitalize'>My Skills</h1>
             <div className='flex justify-center gap-4 flex-wrap'>
                 {skills.map((skill, index) => (
-                    <SkillCard key={index} title={skill.title} imageSrc={skill.imageSrc} />
+                    <Card className="w-auto" key={index}>
+                        <CardHeader className='flex flex-col items-center'>
+                            <Image alt={skill.title} src={skill.imageSrc} width={60} height={60} />
+                            <CardTitle className='text-lg text-center'>{skill.title}</CardTitle>
+                        </CardHeader>
+                    </Card>
                 ))}
             </div>
         </section>
