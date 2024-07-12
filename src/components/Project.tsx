@@ -94,7 +94,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ title, projects }) => {
 
 const Project = () => {
     return (
-        <section className='py-28'>
+        <section id='project' className='py-28'>
             <h1 className='text-center text-4xl mb-10 font-bold capitalize'>
                 Some Project that have <span className='text-cyan-500'>been made</span>
             </h1>

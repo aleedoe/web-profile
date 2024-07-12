@@ -2,43 +2,31 @@ import { Button } from "@/components/ui/button"
 import {
     DropdownMenu,
     DropdownMenuContent,
-    DropdownMenuGroup,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuPortal,
-    DropdownMenuSeparator,
-    DropdownMenuShortcut,
-    DropdownMenuSub,
-    DropdownMenuSubContent,
-    DropdownMenuSubTrigger,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Link from "next/link"
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 export default function HamburgerHeader() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="outline">Open</Button>
+                <Button variant="outline"><RxHamburgerMenu /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-40">
                 <DropdownMenuItem>
-                <Link rel="stylesheet" href="" >About</Link>
+                    <Link href="#about">About</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                <Link rel="stylesheet" href="" >Skills</Link>
+                    <Link href="#skill">Skills</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                <Link rel="stylesheet" href="" >Projects</Link>
+                    <Link href="#project">Projects</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                <Link rel="stylesheet" href="" >Experiences</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                <Link rel="stylesheet" href="" >Testimonials</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                <Link rel="stylesheet" href="" >Contact</Link>
+                    <Link href="#experience">Experiences</Link>
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

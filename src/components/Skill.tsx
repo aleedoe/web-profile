@@ -22,7 +22,7 @@ const skills = [
 
 const Skill = () => {
     return (
-        <section className='py-28'>
+        <section id='skill' className='py-28'>
             <h1 className='text-center text-4xl mb-10 font-bold capitalize'>My Skills</h1>
             <div className='flex justify-center gap-4 flex-wrap'>
                 {skills.map((skill, index) => (

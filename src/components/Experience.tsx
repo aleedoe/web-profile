@@ -17,7 +17,7 @@ const ListItem: React.FC<ListItemProps> = ({ date, title, description }) => (
 
 const Experience = () => {
     return (
-        <section className="py-28 flex flex-col justify-center items-center w-full">
+        <section id="experience" className="py-28 flex flex-col justify-center items-center w-full">
             <h1 className="text-center text-4xl mb-10 font-bold capitalize">My Experience</h1>
             <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <ListItem
